@@ -179,7 +179,7 @@ class SendPress_View_Settings_Advanced extends SendPress_View_Settings {
 					<hr>
 					Queue History:  <?php $this->select('queue-history',SendPress_Option::get('queue-history',7), array(7,14,21,28,35,42,49) ); ?> Days <br><small>Default: 7 Days</small>
 					<hr>
-					Add Emails to Queue:  <?php $this->select('queue-per-call',SendPress_Option::get('queue-per-call',1000), array( 50,100,200,300,400,500,600,700,800,900,1000 ) ); ?> Emails <br><small>Default: 1000 Emails</small>
+					Add Emails to Queue:  <?php $this->select('queue-per-call',SendPress_Option::get('queue-per-call',1000), array( 50,100,200,300,400,500,600,700,800,900,1000,10000 ) ); ?> Emails <br><small>Default: 1000 Emails</small>
 				</div>
 			</div>
 			<?php do_action('sendpress_advanced_settings'); ?>
